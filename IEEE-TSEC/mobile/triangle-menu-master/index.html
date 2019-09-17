@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap core JavaScript
+================================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="build/clip-path-polygon.min.js"></script>
+<script src="build/triangle-menu.min.js"></script>
+<style>
+.triangle-menu {
+  height: 100px;
+  width: 400px;
+  background: green;
+  text-align: center;
+}
+.menu-item {
+  height: 100%;
+}
+</style>
+<script>
+$('.triangle-menu').triangleMenu({
+  activate: function(e, index) {
+    $('.selected-text').html('Selected: ' + index);
+  }
+});
+</script>
+</head>
+<body>
+<div class="row triangle-menu">
+  <div class="col-md-3 menu-item">1</div>
+  <div class="col-md-3 menu-item">2</div>
+  <div class="col-md-3 menu-item">3</div>
+  <div class="col-md-3 menu-item">4</div>
+</div>
+<span class="selected-text">Selected: 1</span>
+</body>
+</html>
