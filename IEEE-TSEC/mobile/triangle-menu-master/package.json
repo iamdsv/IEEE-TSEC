@@ -10,7 +10,7 @@
     "url": "git://github.com/andrusieczko/triangle-menu.git"
   },
   "dependencies": {
-    "jquery": "~1.8.3",
+    "jquery": "~3.5.0",
     "clip-path-polygon": ""
   },
   "devDependencies": {
